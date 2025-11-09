@@ -1,5 +1,5 @@
 # brain-tumor-classifier
-Beyin Tümörü Tespiti (MRI Görüntülerinden Derin Öğrenme ile Sınıflandırma)
+## Beyin Tümörü Tespiti (MRI Görüntülerinden Derin Öğrenme ile Sınıflandırma)
 
 Son yıllarda yapay zekâ, sağlık alanında en çok ilgi gören teknolojilerden biri haline gelmiştir. Özellikle beyin tümörü gibi erken teşhisi hayati önem taşıyan hastalıkların tanısında bilgisayar destekli sistemler büyük bir kolaylık sağlamaktadır. Bu proje, beyin MRI (Manyetik Rezonans Görüntüleme) görüntülerinden faydalanarak, bir kişide tümör olup olmadığını belirlemeyi amaçlayan basit bir yapay zekâ uygulamasıdır.
 
