@@ -1,12 +1,12 @@
 # brain-tumor-classifier
 Beyin Tümörü Tespiti (MRI Görüntülerinden Derin Öğrenme ile Sınıflandırma)
-##1. Projenin Amacı
+## 1. Projenin Amacı
 
 Bu projenin amacı, derin öğrenme yöntemleri kullanarak beyin MRI (Manyetik Rezonans Görüntüleme) görüntülerinden bir kişide beyin tümörü olup olmadığını otomatik olarak tespit eden bir model geliştirmektir. Tıp alanında, MRI görüntülerinin incelenmesi uzmanlık gerektiren ve zaman alan bir işlemdir. Bu nedenle, bu tür bir otomatik sınıflandırma sistemi doktorlara yardımcı olabilir ve teşhis sürecini hızlandırabilir.
 
 Bu proje, öğrenci düzeyinde uygulanabilir basit bir yaklaşımla, önceden eğitilmiş bir derin öğrenme modelinden (transfer learning yöntemiyle) yararlanarak gerçekleştirilmiştir.
 
-##2. Kullanılan Teknolojiler ve Araçlar
+## 2. Kullanılan Teknolojiler ve Araçlar
 
 Python – temel programlama dili
 
@@ -20,7 +20,7 @@ Matplotlib – veri görselleştirme için
 
 Ayrıca modelin eğitimi için kullanılan veri seti, “Brain MRI Images for Brain Tumor Detection” adlı açık kaynaklı bir veri kümesidir. Bu veri setinde “yes” (tümör var) ve “no” (tümör yok) olmak üzere iki sınıf bulunmaktadır.
 
-##3. Veri Seti ve Ön İşleme
+## 3. Veri Seti ve Ön İşleme
 
 Veri seti iki klasörden oluşmaktadır:
 
@@ -48,7 +48,7 @@ Ayna çevirme (flip)
 
 Bu sayede model farklı açılardan gelen görüntülerle karşılaşmış olur ve aşırı öğrenme (overfitting) engellenir.
 
-##4. Modelin Yapısı
+## 4. Modelin Yapısı
 
 Bu projede transfer learning yöntemi kullanılmıştır. Yani sıfırdan bir ağ eğitmek yerine, daha önce büyük veri setlerinde eğitilmiş bir model alınmış ve üzerine birkaç katman eklenmiştir.
 
@@ -68,7 +68,7 @@ BatchNormalization ve Dropout(0.2) – aşırı öğrenmeyi azaltmak için
 
 Dense (1, Sigmoid) – iki sınıf (tümör var/yok) için çıktı katmanı
 
-##5. Modelin Eğitimi
+## 5. Modelin Eğitimi
 
 Model, binary_crossentropy kayıp fonksiyonu ve Adam optimizasyon algoritmasıyla derlenmiştir.
 Eğitim sırasında şu geri çağırma (callback) fonksiyonları kullanılmıştır:
@@ -87,7 +87,7 @@ Epoch	Doğruluk (train)	Doğruluk (val)	Kayıp (val_loss)
 
 Model 4. epoch sonunda erken durdurma ile eğitimi tamamlamıştır.
 
-##6. Sonuçlar
+## 6. Sonuçlar
 
 Model, test veri seti üzerinde şu sonuçları vermiştir:
 
@@ -97,7 +97,7 @@ Doğruluk (accuracy): %84.6
 
 Bu sonuç, basit bir öğrenci projesi için oldukça başarılıdır. Model, küçük bir veri setine rağmen MRI görüntülerinden beyin tümörünü ayırt etmede %80’in üzerinde doğruluk sağlamıştır.
 
-##7. Sonuç ve Gelecekteki Geliştirmeler
+## 7. Sonuç ve Gelecekteki Geliştirmeler
 
 Bu proje, derin öğrenmenin sağlık alanında nasıl kullanılabileceğine dair küçük ama etkili bir örnektir. Daha büyük ve dengeli bir veri setiyle model yeniden eğitilirse doğruluk oranı artırılabilir. Ayrıca modelin çıktılarına Grad-CAM gibi görselleştirme teknikleri eklenerek hangi bölgelerin tümör olarak algılandığı da açıklanabilir.
 
