@@ -4,7 +4,7 @@ Beyin Tümörü Tespiti (MRI Görüntülerinden Derin Öğrenme ile Sınıfland�
 
 Bu projenin amacı, derin öğrenme yöntemleri kullanarak beyin MRI (Manyetik Rezonans Görüntüleme) görüntülerinden bir kişide beyin tümörü olup olmadığını otomatik olarak tespit eden bir model geliştirmektir. Tıp alanında, MRI görüntülerinin incelenmesi uzmanlık gerektiren ve zaman alan bir işlemdir. Bu nedenle, bu tür bir otomatik sınıflandırma sistemi doktorlara yardımcı olabilir ve teşhis sürecini hızlandırabilir.
 
-Bu proje, öğrenci düzeyinde uygulanabilir basit bir yaklaşımla, önceden eğitilmiş bir derin öğrenme modelinden (transfer learning yöntemiyle) yararlanarak gerçekleştirilmiştir.
+Bu proje, basit bir yaklaşımla, önceden eğitilmiş bir derin öğrenme modelinden (transfer learning yöntemiyle) yararlanarak gerçekleştirilmiştir.
 
 ## 2. Kullanılan Teknolojiler ve Araçlar
 
@@ -95,11 +95,8 @@ Kayıp (loss): 0.38
 
 Doğruluk (accuracy): %84.6
 
-Bu sonuç, basit bir öğrenci projesi için oldukça başarılıdır. Model, küçük bir veri setine rağmen MRI görüntülerinden beyin tümörünü ayırt etmede %80’in üzerinde doğruluk sağlamıştır.
+Model, küçük bir veri setine rağmen MRI görüntülerinden beyin tümörünü ayırt etmede %80’in üzerinde doğruluk sağlamıştır.
 
 ## 7. Sonuç ve Gelecekteki Geliştirmeler
 
 Bu proje, derin öğrenmenin sağlık alanında nasıl kullanılabileceğine dair küçük ama etkili bir örnektir. Daha büyük ve dengeli bir veri setiyle model yeniden eğitilirse doğruluk oranı artırılabilir. Ayrıca modelin çıktılarına Grad-CAM gibi görselleştirme teknikleri eklenerek hangi bölgelerin tümör olarak algılandığı da açıklanabilir.
-
-Özetle:
-Bu proje, öğrenci düzeyinde TensorFlow ve Keras kullanılarak hazırlanmış, beyin MRI görüntülerinden beyin tümörü tespiti yapan bir derin öğrenme modelidir. Transfer learning yöntemi sayesinde kısa sürede eğitilmiş, doğrulama ve test setlerinde %80’in üzerinde başarı elde edilmiştir.
